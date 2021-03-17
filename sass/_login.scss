@@ -1,0 +1,34 @@
+.main-container {
+    height: 100vh;
+    height: 90vh;
+    background: url("img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 50%;
+    position: relative;
+    @include flex-center;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 90vh;
+        width: 100vw;
+        background-color: $dark;
+        opacity: 0.65;
+    }
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+    background-color: $light;
+    border-radius: $radius;
+    @include flex-center;
+
+}
+
+.login-form {
+    padding: 5rem;
+    @include flex-center;
+    flex-direction: column;
+}

@@ -1,5 +1,5 @@
-/* Main */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+/* Main */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,6 +23,51 @@ li {
   list-style: none;
 }
 
+/* Utilities */
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  width: 11ch;
+  text-align: center;
+  padding: 0.5em 0;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: filter 100ms linear, margin 100ms linear;
+}
+.btn:hover {
+  filter: brightness(125%);
+  margin-bottom: 0.2rem;
+  transition: filter 100ms linear, margin 100ms linear;
+}
+
+.btn-light {
+  background-color: #6eaccc;
+  color: #252c44;
+}
+
+.bg-light {
+  background-color: #f2efef;
+  color: #252c44;
+}
+
+.bg-dark {
+  background-color: #252c44;
+  color: #f2efef;
+}
+
+.color-light {
+  color: #f2efef;
+}
+
+/* Mixins */
 /* Main Navbar */
 .main-nav {
   position: fixed;
@@ -75,7 +120,7 @@ li {
 }
 
 .nav-active {
-  background-color: #252c44a2;
+  background-color: rgba(37, 44, 68, 0.8);
   display: flex;
   justify-content: center;
 }
@@ -160,6 +205,7 @@ li {
   .top-menu__list {
     position: relative;
     border-top: 0.5px solid #f2efef;
+    border-bottom: 0.5px solid #f2efef;
     flex-direction: column;
     justify-content: center;
   }
@@ -188,7 +234,7 @@ li {
   }
 
   .nav-active .top-menu {
-    padding: 3em 0 0 0;
+    padding: 3.5em 0 0 0;
     transition: padding 200ms linear;
   }
   .nav-active .top-menu__item {
@@ -240,88 +286,6 @@ li {
     display: none;
   }
 }
-/* Footer */
-.inner-footer {
-  padding: 1em;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.social-icon {
-  margin: 0 1rem;
-  font-size: 1.75rem;
-  transition: all 200ms linear;
-}
-.social-icon:hover {
-  filter: brightness(75%);
-  margin-top: -0.25rem;
-  font-size: 2rem;
-  transition: filter 200ms linear;
-  transition: all 200ms linear;
-}
-
-.footer-copy {
-  display: flex;
-}
-.footer-copy h4 {
-  margin-right: 0.5rem;
-}
-
-@media screen and (max-width: 576px) {
-  /* Footer */
-  .inner-footer {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .footer-policy {
-    padding: 1em;
-  }
-}
-/* Utilities */
-.container {
-  max-width: 1140px;
-  margin: auto;
-}
-
-.flex {
-  display: flex;
-}
-
-.btn {
-  width: 11ch;
-  text-align: center;
-  padding: 0.5em 0;
-  border-radius: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: filter 100ms linear, margin 100ms linear;
-}
-.btn:hover {
-  filter: brightness(125%);
-  margin-bottom: 0.2rem;
-  transition: filter 100ms linear, margin 100ms linear;
-}
-
-.btn-light {
-  background-color: #6eaccc;
-  color: #252c44;
-}
-
-.bg-light {
-  background-color: #f2efef;
-  color: #252c44;
-}
-
-.bg-dark {
-  background-color: #252c44;
-  color: #f2efef;
-}
-
-.color-light {
-  color: #f2efef;
-}
-
 /* Homepage Hero */
 .homepage-hero {
   height: 65vh;
@@ -365,6 +329,84 @@ li {
 .main-articles {
   background-color: #f2efef;
   height: 75vh;
+}
+
+.main-container {
+  height: 100vh;
+  height: 90vh;
+  background: url("img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container::after {
+  position: absolute;
+  content: "";
+  height: 90vh;
+  width: 100vw;
+  background-color: #252c44;
+  opacity: 0.65;
+}
+
+.login-container {
+  position: relative;
+  z-index: 1;
+  background-color: #f2efef;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Footer */
+.inner-footer {
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icon {
+  margin: 0 1rem;
+  font-size: 1.75rem;
+  transition: all 200ms linear;
+}
+.social-icon:hover {
+  filter: brightness(75%);
+  margin-top: -0.25rem;
+  font-size: 2rem;
+  transition: filter 200ms linear;
+  transition: all 200ms linear;
+}
+
+.footer-copy {
+  display: flex;
+}
+.footer-copy h4 {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  /* Footer */
+  .inner-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-policy {
+    padding: 1em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

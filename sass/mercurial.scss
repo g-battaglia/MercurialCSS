@@ -1,62 +1,18 @@
 @import "variables.scss";
 @import "main.scss";
-@import "navbar.scss";
-@import "footer.scss";
 @import "utilities.scss";
+@import "navbar.scss";
+@import "hero.scss";
+@import "articles_section.scss";
+@import "login.scss";
+@import "footer.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 
 
 
 
-/* Homepage Hero */
 
-.homepage-hero {
-    height: 65vh;
-    background: url("img/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30% 50%;
-    position: relative;
-
-    &::after {
-        position: absolute;
-        content: "";
-        height: 65vh;
-        width: 100vw;
-        background-color: $dark;
-        opacity: 0.65;
-    }
-}
-
-.hero-description {
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 65vh;
-    color: $light;
-    z-index: 100;
-}
-
-.inner-hero-description {
-    width: min(75%, 500px);
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* backdrop-filter: blur(50px); */
-    border-radius: 10px;
-}
-
-/* Main articles section */
-
-.main-articles {
-    background-color: $light;
-    height: 75vh;
-}
 
 
    
