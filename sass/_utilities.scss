@@ -1,0 +1,47 @@
+/* Utilities */
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn {
+    width: 11ch;
+    text-align: center;
+    padding: 0.50em 0;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: filter 100ms linear, margin 100ms linear;
+
+    &:hover {
+        filter: brightness(125%);
+        margin-bottom: 0.2rem;
+        transition: filter 100ms linear, margin 100ms linear;
+    }
+}
+
+.btn-light {
+    background-color: $highlight;
+    color: $dark;
+
+}
+
+
+.bg-light {
+    background-color: $light;
+    color: $dark;
+}
+
+.bg-dark {
+    background-color: $dark;
+    color: $light;
+}
+
+.color-light {
+    color: $light;
+}

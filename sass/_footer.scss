@@ -1,0 +1,48 @@
+/* Footer */
+
+
+.inner-footer {
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icon {
+    margin: 0 1rem;
+    font-size: 1.75rem;
+    transition: all 200ms linear;
+
+    &:hover {
+        filter: brightness(75%);
+        margin-top: -0.25rem;
+        font-size: 2rem;
+        transition: filter 200ms linear;
+        transition: all 200ms linear;
+    
+    }
+
+}
+
+.footer-copy {
+    display: flex;
+    
+    h4 {
+        margin-right: 0.5rem;
+    }
+}
+
+
+@media  screen and (max-width: 576px) {
+    
+    /* Footer */
+
+    .inner-footer {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .footer-policy {
+        padding: 1em;
+    }
+}
