@@ -428,7 +428,7 @@ li {
   width: 100%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-height: 900px) {
   .main-form__container {
     height: 80vh;
   }
