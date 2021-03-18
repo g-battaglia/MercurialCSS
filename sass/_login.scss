@@ -21,14 +21,64 @@
 .login-container {
     position: relative;
     z-index: 1;
-    background-color: $light;
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    backdrop-filter: blur(10px);
     border-radius: $radius;
     @include flex-center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: $box-shadow;
+    padding: 3em;
+
+
+    h2 {
+        // text-transform: uppercase;
+        color: $light;
+
+    }
+
 
 }
 
 .login-form {
-    padding: 5rem;
+    width:30ch;
     @include flex-center;
+    align-items: flex-start;
     flex-direction: column;
+    .btn {
+        font-size: 1rem;
+        font-weight: 600;
+        &:hover {
+            margin: 0.5em 0;
+        }
+    }
+}
+.form-control {
+    width: 100%;
+    input {
+        &[type='text'],
+        &[type='password'],
+        &[type='email'] {
+            border: none;
+            outline: none;
+            background-color: $light;
+            border-radius: $radius;
+            padding: 1em;
+            color: $dark;
+            margin: 1em 0;
+            width: 100%;
+            font-size: 1rem;
+
+        }
+    }
+}
+
+.form-fields {
+    width: 100%;
+}
+
+.form-btn {
+    @extend .btn;
+    padding: 1em;
+    width: 100%;
 }

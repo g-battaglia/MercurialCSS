@@ -104,6 +104,7 @@
         border-radius: 5px;
         font-size: 1rem;
         margin-left: -3.5em;
+        box-shadow: $box-shadow;
     }
 
     .hover-top-menu::before {
@@ -236,7 +237,6 @@
     .hover-top-menu, .top-menu__item:hover .hover-top-menu {
 
         position: static;
-
         display: block;
         width: 200%;
         margin: 2rem 0 -2rem -2rem;

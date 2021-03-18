@@ -101,13 +101,19 @@
     </nav>
     
     <!-- Login Form -->
-    <main class="main-container container">
+    <main class="main-container">
         <div class="login-container">
-            <form action="" class="login-form">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname">
-                <label for="passowrd">Passowrd:</label>
-                <input type="password" id="fname" name="fname">
+            <h2>Accedi:</h2>
+            <form action="" class="login-form" method="POST">
+                <div class="form-fields">
+                    <div class="form-control">
+                        <input type="text" name="username" placeholder="Nome utente" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="company" placeholder="Password" required>
+                    </div>
+                </div>
+                <input type="submit" value="Accedi" class="form-btn btn-light">
             </form>
         </div>
     </main>

@@ -33,19 +33,26 @@ li {
   display: flex;
 }
 
-.btn {
+/* Buttons */
+.btn, .form-btn {
   width: 11ch;
   text-align: center;
   padding: 0.5em 0;
-  border-radius: 20px;
+  margin: 0.5em 0;
+  border-radius: 15px;
+  border: none;
   font-weight: 600;
   text-transform: uppercase;
   transition: filter 100ms linear, margin 100ms linear;
 }
-.btn:hover {
+.btn:hover, .form-btn:hover {
   filter: brightness(125%);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.7rem;
   transition: filter 100ms linear, margin 100ms linear;
+}
+.btn:active, .form-btn:active {
+  outline: none;
+  filter: brightness(135%);
 }
 
 .btn-light {
@@ -151,6 +158,7 @@ li {
   border-radius: 5px;
   font-size: 1rem;
   margin-left: -3.5em;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
 }
 .top-menu__item:hover .hover-top-menu::before {
   content: "";
@@ -355,19 +363,59 @@ li {
 .login-container {
   position: relative;
   z-index: 1;
-  background-color: #f2efef;
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 3em;
+}
+.login-container h2 {
+  color: #f2efef;
 }
 
 .login-form {
-  padding: 5rem;
+  width: 30ch;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+}
+.login-form .btn, .login-form .form-btn {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.login-form .btn:hover, .login-form .form-btn:hover {
+  margin: 0.5em 0;
+}
+
+.form-control {
+  width: 100%;
+}
+.form-control input[type=text], .form-control input[type=password], .form-control input[type=email] {
+  border: none;
+  outline: none;
+  background-color: #f2efef;
+  border-radius: 15px;
+  padding: 1em;
+  color: #252c44;
+  margin: 1em 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.form-fields {
+  width: 100%;
+}
+
+.form-btn {
+  padding: 1em;
+  width: 100%;
 }
 
 /* Footer */
