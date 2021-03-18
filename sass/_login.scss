@@ -82,3 +82,14 @@
     padding: 1em;
     width: 100%;
 }
+
+
+@media  screen and (max-width: 576px) {
+    .main-form__container {
+        height: 80vh;
+        &::after {
+            height: 80vh;
+
+        }
+    }
+}

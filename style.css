@@ -428,6 +428,14 @@ li {
   width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+  .main-form__container {
+    height: 80vh;
+  }
+  .main-form__container::after {
+    height: 80vh;
+  }
+}
 /* Footer */
 .inner-footer {
   padding: 1em;
