@@ -82,7 +82,8 @@ li {
   width: 100vw;
   /* background-color: transparent; */
   color: #f2efef;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: background-color 200ms linear;
   font-weight: 400;
 }
@@ -373,6 +374,7 @@ li {
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -424,7 +426,6 @@ li {
   font-size: 1em;
   padding: 1em;
   width: 100%;
-  margin: 1em 0;
 }
 
 /* Footer */

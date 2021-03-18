@@ -22,7 +22,7 @@
     position: relative;
     z-index: 1;
     background-color: rgba($color: #ffffff, $alpha: 0.2);
-    backdrop-filter: blur(10px);
+    @include blur;
     border-radius: $radius;
     @include flex-center;
     align-items: flex-start;
@@ -81,6 +81,4 @@
     font-size: 1em;
     padding: 1em;
     width: 100%;
-    margin: 1em 0;
-
 }
