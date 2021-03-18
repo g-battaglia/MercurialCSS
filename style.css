@@ -187,6 +187,14 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .inner-main-nav {
+    padding: 0 1rem;
+    padding: 0 2rem;
+    padding-bottom: 0.5em;
+    font-size: 0.85rem;
+    transition: height 200ms linear, font-size 200ms linear;
+  }
+
   /* Main Navbar */
   .toggle-menu {
     display: inline-block;
@@ -339,8 +347,8 @@ li {
   height: 75vh;
 }
 
-.main-container {
-  height: 100vh;
+.main-form__container {
+  width: 100vw;
   height: 90vh;
   background: url("img/hero.jpg");
   background-repeat: no-repeat;
@@ -351,7 +359,7 @@ li {
   justify-content: center;
   align-items: center;
 }
-.main-container::after {
+.main-form__container::after {
   position: absolute;
   content: "";
   height: 90vh;
@@ -379,7 +387,6 @@ li {
 }
 
 .login-form {
-  width: 30ch;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,7 +394,7 @@ li {
   flex-direction: column;
 }
 .login-form .btn, .login-form .btn-light, .login-form .form-btn {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 600;
 }
 .login-form .btn:hover, .login-form .btn-light:hover, .login-form .form-btn:hover {
@@ -406,7 +413,7 @@ li {
   color: #252c44;
   margin: 1em 0;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .form-fields {
@@ -414,7 +421,7 @@ li {
 }
 
 .form-btn {
-  font-size: 1rem;
+  font-size: 1em;
   padding: 1em;
   width: 100%;
   margin: 1em 0;

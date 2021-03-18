@@ -1,5 +1,5 @@
-.main-container {
-    height: 100vh;
+.main-form__container {
+    width: 100vw;
     height: 90vh;
     background: url("img/hero.jpg");
     background-repeat: no-repeat;
@@ -41,12 +41,11 @@
 }
 
 .login-form {
-    width:30ch;
     @include flex-center;
     align-items: flex-start;
     flex-direction: column;
     .btn {
-        font-size: 1rem;
+        font-size: 1em;
         font-weight: 600;
         &:hover {
             margin: 0.5em 0;
@@ -67,7 +66,7 @@
             color: $dark;
             margin: 1em 0;
             width: 100%;
-            font-size: 1rem;
+            font-size: 1em;
 
         }
     }
@@ -79,7 +78,7 @@
 
 .form-btn {
     @extend .btn-light;
-    font-size: 1rem;
+    font-size: 1em;
     padding: 1em;
     width: 100%;
     margin: 1em 0;

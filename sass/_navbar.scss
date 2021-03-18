@@ -141,6 +141,13 @@
 
 @media  screen and (max-width: 768px) {
 
+    .inner-main-nav {
+        padding: 0 1rem;
+        padding: 0 2rem;
+        padding-bottom: 0.5em;
+        font-size: 0.85rem;
+        transition: height 200ms linear, font-size 200ms linear;
+    }
 
     /* Main Navbar */
     
