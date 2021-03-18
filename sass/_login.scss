@@ -78,7 +78,8 @@
 }
 
 .form-btn {
-    @extend .btn;
+    @extend .btn-light;
+    font-size: 1rem;
     padding: 1em;
     width: 100%;
 }

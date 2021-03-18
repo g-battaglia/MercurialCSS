@@ -34,7 +34,7 @@ li {
 }
 
 /* Buttons */
-.btn, .form-btn {
+.btn, .btn-light, .form-btn {
   width: 11ch;
   text-align: center;
   padding: 0.5em 0;
@@ -45,17 +45,17 @@ li {
   text-transform: uppercase;
   transition: filter 100ms linear, margin 100ms linear;
 }
-.btn:hover, .form-btn:hover {
+.btn:hover, .btn-light:hover, .form-btn:hover {
   filter: brightness(125%);
   margin-bottom: 0.7rem;
   transition: filter 100ms linear, margin 100ms linear;
 }
-.btn:active, .form-btn:active {
+.btn:active, .btn-light:active, .form-btn:active {
   outline: none;
   filter: brightness(135%);
 }
 
-.btn-light {
+.btn-light, .form-btn {
   background-color: #6eaccc;
   color: #252c44;
 }
@@ -386,11 +386,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-.login-form .btn, .login-form .form-btn {
+.login-form .btn, .login-form .btn-light, .login-form .form-btn {
   font-size: 1rem;
   font-weight: 600;
 }
-.login-form .btn:hover, .login-form .form-btn:hover {
+.login-form .btn:hover, .login-form .btn-light:hover, .login-form .form-btn:hover {
   margin: 0.5em 0;
 }
 
@@ -414,6 +414,7 @@ li {
 }
 
 .form-btn {
+  font-size: 1rem;
   padding: 1em;
   width: 100%;
 }

@@ -35,6 +35,7 @@
 }
 
 .btn-light {
+    @extend .btn;
     background-color: $highlight;
     color: $dark;
 
