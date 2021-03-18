@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #252c44;
+  width: 100%;
 }
 
 a {
@@ -34,7 +35,7 @@ li {
 }
 
 /* Buttons */
-.btn, .btn-light, .form-btn {
+.btn, .btn-light, .account-form-btn {
   width: 11ch;
   text-align: center;
   padding: 0.5em 0;
@@ -43,19 +44,26 @@ li {
   border: none;
   font-weight: 600;
   text-transform: uppercase;
-  transition: filter 100ms linear, margin 100ms linear;
+  transition: filter 100ms linear;
 }
-.btn:hover, .btn-light:hover, .form-btn:hover {
+.btn:hover, .btn-light:hover, .account-form-btn:hover {
   filter: brightness(125%);
-  margin-bottom: 0.7rem;
-  transition: filter 100ms linear, margin 100ms linear;
+  transition: filter 100ms linear;
 }
-.btn:active, .btn-light:active, .form-btn:active {
+.btn:active, .btn-light:active, .account-form-btn:active {
   outline: none;
   filter: brightness(135%);
 }
 
-.btn-light, .form-btn {
+.btn-animate {
+  transition: margin 100ms linear;
+}
+.btn-animate:hover {
+  margin-bottom: 0.7rem;
+  transition: margin 100ms linear;
+}
+
+.btn-light, .account-form-btn {
   background-color: #6eaccc;
   color: #252c44;
 }
@@ -267,7 +275,6 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em;
   }
 
   .hover-top-menu, .top-menu__item:hover .hover-top-menu {
@@ -275,7 +282,7 @@ li {
     display: block;
     width: 200%;
     margin: 2rem 0 -2rem -2rem;
-    padding: 1em 4em;
+    padding: 1em 2em;
     border-radius: 0;
     background-color: #d1d1d1;
     color: #f2efef;
@@ -327,14 +334,13 @@ li {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 65vh;
+  height: 100%;
   color: #f2efef;
   z-index: 100;
 }
 
 .inner-hero-description {
   width: min(75%, 500px);
-  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,10 +351,11 @@ li {
 /* Main articles section */
 .main-articles {
   background-color: #f2efef;
-  height: 75vh;
+  height: 100vh;
+  width: 100vw;
 }
 
-.main-form__container {
+.main-account-form__container {
   width: 100vw;
   height: 90vh;
   background: url("img/hero.jpg");
@@ -360,7 +367,7 @@ li {
   justify-content: center;
   align-items: center;
 }
-.main-form__container::after {
+.main-account-form__container::after {
   position: absolute;
   content: "";
   height: 90vh;
@@ -369,7 +376,7 @@ li {
   opacity: 0.65;
 }
 
-.login-container {
+.account-form-container {
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.2);
@@ -383,30 +390,27 @@ li {
   flex-direction: column;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   padding: 3em;
+  width: 75vw;
+  max-width: 25rem;
 }
-.login-container h2 {
+
+.account-form-header {
   color: #f2efef;
 }
 
-.login-form {
+.account-form {
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: flex-start;
   flex-direction: column;
-}
-.login-form .btn, .login-form .btn-light, .login-form .form-btn {
-  font-size: 1em;
-  font-weight: 600;
-}
-.login-form .btn:hover, .login-form .btn-light:hover, .login-form .form-btn:hover {
-  margin: 0.5em 0;
-}
-
-.form-control {
   width: 100%;
 }
-.form-control input[type=text], .form-control input[type=password], .form-control input[type=email] {
+
+.account-form-control {
+  width: 100%;
+}
+.account-form-control input[type=text], .account-form-control input[type=password], .account-form-control input[type=email] {
   border: none;
   outline: none;
   background-color: #f2efef;
@@ -418,25 +422,31 @@ li {
   font-size: 1em;
 }
 
-.form-fields {
+.account-form-fields {
   width: 100%;
 }
 
-.form-btn {
+.account-form-btn {
   font-size: 1em;
   padding: 1em;
   width: 100%;
 }
 
-@media screen and (max-height: 900px) {
-  .main-form__container {
+@media screen and (max-height: 700px) {
+  .main-account-form__container {
     height: 80vh;
   }
-  .main-form__container::after {
+  .main-account-form__container::after {
     height: 80vh;
   }
 }
 /* Footer */
+.outer-footer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
 .inner-footer {
   padding: 1em;
   justify-content: space-between;

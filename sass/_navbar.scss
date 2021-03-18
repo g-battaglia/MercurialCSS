@@ -238,7 +238,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 2em;
     }
 
     .hover-top-menu, .top-menu__item:hover .hover-top-menu {
@@ -247,7 +246,7 @@
         display: block;
         width: 200%;
         margin: 2rem 0 -2rem -2rem;
-        padding: 1em 4em;
+        padding: 1em 2em;
         border-radius: 0;
         background-color: $grey;
         color: $light;

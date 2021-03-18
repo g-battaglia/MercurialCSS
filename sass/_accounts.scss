@@ -1,4 +1,4 @@
-.main-form__container {
+.main-account-form__container {
     width: 100vw;
     height: 90vh;
     background: url("img/hero.jpg");
@@ -18,7 +18,7 @@
     }
 }
 
-.login-container {
+.account-form-container {
     position: relative;
     z-index: 1;
     background-color: rgba($color: #ffffff, $alpha: 0.2);
@@ -29,32 +29,29 @@
     flex-direction: column;
     box-shadow: $box-shadow;
     padding: 3em;
-
-
-    h2 {
-        // text-transform: uppercase;
-        color: $light;
-
-    }
-
+    width: 75vw;
+    max-width: 25rem;
 
 }
 
-.login-form {
+.account-form-header {
+    // text-transaccount-form: uppercase;
+    color: $light;
+
+}
+
+.account-form {
     @include flex-center;
     align-items: flex-start;
     flex-direction: column;
-    .btn {
-        font-size: 1em;
-        font-weight: 600;
-        &:hover {
-            margin: 0.5em 0;
-        }
-    }
+    width: 100%;
+
 }
-.form-control {
+
+.account-form-control {
     width: 100%;
     input {
+
         &[type='text'],
         &[type='password'],
         &[type='email'] {
@@ -68,15 +65,16 @@
             width: 100%;
             font-size: 1em;
 
+
         }
     }
 }
 
-.form-fields {
+.account-form-fields {
     width: 100%;
 }
 
-.form-btn {
+.account-form-btn {
     @extend .btn-light;
     font-size: 1em;
     padding: 1em;
@@ -84,8 +82,8 @@
 }
 
 
-@media  screen and (max-height: 900px) {
-    .main-form__container {
+@media  screen and (max-height: 700px) {
+    .main-account-form__container {
         height: 80vh;
         &::after {
             height: 80vh;

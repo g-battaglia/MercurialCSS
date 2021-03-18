@@ -24,14 +24,13 @@
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 65vh;
+    height: 100%;
     color: $light;
     z-index: 100;
 }
 
 .inner-hero-description {
     width: min(75%, 500px);
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -20,17 +20,26 @@
     border: none;
     font-weight: 600;
     text-transform: uppercase;
-    transition: filter 100ms linear, margin 100ms linear;
+    transition: filter 100ms linear;
 
     &:hover {
         filter: brightness(125%);
-        margin-bottom: 0.7rem;
-        transition: filter 100ms linear, margin 100ms linear;
+        transition: filter 100ms linear;
     }
 
     &:active {
         outline: none;
         filter: brightness(135%);
+    }
+}
+
+.btn-animate {
+    
+    transition: margin 100ms linear;
+
+    &:hover {
+        margin-bottom: 0.7rem;
+        transition: margin 100ms linear;
     }
 }
 
