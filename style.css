@@ -160,13 +160,13 @@ li {
 
 .top-menu__item:hover .hover-top-menu {
   display: block;
-  background-color: #f2efef;
+  padding: 2em;
   position: absolute;
   top: 115%;
-  padding: 2em;
+  margin-left: -3.5em;
+  background-color: #f2efef;
   border-radius: 5px;
   font-size: 1rem;
-  margin-left: -3.5em;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
 }
 .top-menu__item:hover .hover-top-menu::before {
@@ -239,18 +239,26 @@ li {
     padding: 2em;
     width: 100%;
     /* text-align: center; */
-    transition: backdrop-filter 200ms ease-in-out;
+    transition: backdrop-filter 100ms ease-in-out;
     font-size: 1rem;
   }
   .top-menu__item:hover {
     backdrop-filter: brightness(75%);
-    transition: backdrop-filter 200ms ease-in-out;
+    transition: backdrop-filter 100ms ease-in-out;
     font-size: 1rem;
+  }
+  .top-menu__item:hover .hover-top-menu {
+    padding: 0;
+    margin-left: 0;
   }
 
   .top-menu__link {
     display: inline-block;
     /* padding: 2rem; */
+  }
+  .top-menu__link:hover {
+    border: none;
+    margin-bottom: 0;
   }
 
   .top-menu__link:hover {
@@ -282,11 +290,23 @@ li {
     display: block;
     width: 200%;
     margin: 2rem 0 -2rem -2rem;
-    padding: 1em 2em;
     border-radius: 0;
     background-color: #d1d1d1;
     color: #f2efef;
     backdrop-filter: brightness(125%);
+  }
+  .hover-top-menu:hover, .top-menu__item:hover .hover-top-menu:hover {
+    margin: -2;
+    padding: 0;
+  }
+
+  .hover-top-menu__item {
+    padding: 0.5em 2em;
+    transition: background-color 100ms ease-in-out;
+  }
+  .hover-top-menu__item:hover {
+    background-color: #b8b8b8;
+    transition: background-color 100ms ease-in-out;
   }
 
   .top-menu__item:hover .hover-top-menu::before {
@@ -303,6 +323,18 @@ li {
 
   .top-menu__item:hover .hover-top-menu.hover-top-menu__hide {
     display: none;
+  }
+
+  .hiden-inner-text {
+    display: inline-block;
+    padding: 0.4em 0;
+  }
+  .hiden-inner-text i {
+    margin-right: 0.4em;
+  }
+  .hiden-inner-text:hover {
+    border-bottom: none;
+    margin-bottom: 0;
   }
 
   /* Utilities */

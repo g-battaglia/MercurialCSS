@@ -5,6 +5,7 @@ const closeToggleIcon = document.querySelector('.close-toggle-icon');
 const topMenuLinkDiv = document.querySelector('.top-menu__link-div');
 const hoverTopMenu = document.querySelector('.hover-top-menu');
 const topMenuOpenIcon = document.querySelector('.top-menu__open-icon');
+
 const topMenuCloseIcon = document.querySelector('.top-menu__close-icon')
 
 
