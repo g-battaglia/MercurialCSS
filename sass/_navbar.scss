@@ -140,7 +140,7 @@
 }
 
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: $breakpoint-medium-width) {
 
     .inner-main-nav {
         padding: 0 1rem;
